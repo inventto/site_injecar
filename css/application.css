@@ -42,8 +42,17 @@ a:hover{
 footer a{
 	color: #ffffff;
 }
+.slider{
+	width: 100%;
+}
 ul{
 	list-style:none;
+}
+.bgwhite{
+	padding: 2%;
+	background: #ffffff;
+	color: #333;
+	text-align: center;
 }
 .copyright{
 	text-align: center;
@@ -51,7 +60,7 @@ ul{
 }
 .copyright_inventto{
 	width: 100%;
-	background: #333;
+	background: #222;
 	text-align: center;
 	padding: 1%;
 	color: #ffffff;
@@ -64,4 +73,7 @@ ul{
 }
 .orbit-bullets{
 	display: none;
+}
+.textHomeSmall{
+	text-align: justify;
 }
