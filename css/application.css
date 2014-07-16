@@ -30,6 +30,9 @@ header{
 		background: #fff;
 		color: red;
 }
+.top-bar.expanded .title-area {
+	background: #ffffff;
+}
 a{
 	color: #59ABE3;
 }
@@ -55,4 +58,10 @@ ul{
 }
 .copyright_inventto a{
 	color: #ffffff;
+}
+.carouselSlide{
+	padding: 2%;
+}
+.orbit-bullets{
+	display: none;
 }
