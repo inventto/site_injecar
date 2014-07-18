@@ -42,6 +42,9 @@ a:hover{
 footer a{
 	color: #ffffff;
 }
+footer a:hover{
+	color:#29FFA6;
+}
 .slider{
 	width: 100%;
 }
@@ -60,9 +63,13 @@ ul{
 	color: #ffffff !important;
 	text-align: center;
 }
+.bgspacing{
+	padding-top: 10%;	
+}
 .copyright{
 	text-align: center;
 	padding: 2%;
+
 }
 .copyright_inventto{
 	width: 100%;
@@ -105,4 +112,17 @@ hr{
 	position:absolute;
 	margin-top: 15%;
 
+}
+.map{
+	 	position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+}
+.map iframe{
+		position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
 }
