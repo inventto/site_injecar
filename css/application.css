@@ -126,3 +126,19 @@ hr{
         width: 100% !important;
         height: 100% !important;
 }
+input{
+	border: none;
+	border-radius: 5px;
+	padding: 2%;
+}
+input[type="submit"]{
+	color: #ffffff;
+	background: #008CBA;
+}
+input[type="submit"]:hover{
+	background: #55B8C4;
+	transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
