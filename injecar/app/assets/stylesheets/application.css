@@ -1,0 +1,159 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require refinery/formatting
+ *= require refinery/theme
+ *= require_self
+ *= require_tree .
+ */
+html, div, nav, h1,h2,h3,h4, h5, a{
+	font-family: 'Open Sans', sans-serif !important;
+
+}
+body{
+	list-style:none;
+}
+footer{
+	padding: 15px;
+	background: #FF4A29;
+	color: #fff;
+  	z-index: 99999;
+}
+
+header{
+	border-top: solid 7px #008CBA;
+	padding: 10px 0 10px 0;
+	box-shadow: 0 -24px 8px 27px rgba(0,0,0,0.3);
+	background: #ffffff !important;
+}
+.top-bar{
+	background: #fff !important;
+	color: #333;
+}
+.top-bar-section li:not(.has-form) a:not(.button){
+	background: #fff;
+	color: #333;
+}
+.top-bar-section li:not(.has-form) a:not(.button):hover{
+		background: #fff;
+		color: red;
+}
+.top-bar.expanded .title-area {
+	background: #fff;
+}
+a{
+	color: #59ABE3;
+}
+a:hover{
+	color: #4183D7;
+}
+footer a{
+	color: #ffffff;
+}
+footer a:hover{
+	color:#29FFA6;
+}
+.slider{
+	width: 100%;
+}
+ul{
+	list-style:none;
+}
+.bgwhite{
+	padding: 4%;
+	background: #ffffff;
+	color: #333;
+	text-align: center;
+}
+.bgblue{
+	padding: 4%;
+	background: #6BB9F0;
+	color: #ffffff !important;
+	text-align: center;
+}
+.bgspacing{
+	padding-top: 10%;
+}
+.copyright{
+	text-align: center;
+	padding: 2%;
+
+}
+.copyright_inventto{
+	width: 100%;
+	background: #222;
+	text-align: center;
+	padding: 1%;
+	color: #ffffff;
+}
+.copyright_inventto a{
+	color: #ffffff;
+}
+.carouselSlide{
+	padding: 2%;
+}
+.orbit-bullets, .orbit-slide-number{
+	display: none;
+}
+.textHomeSmall{
+	text-align: justify;
+}
+.slider{
+  padding: 0 !important;
+}
+.large{
+	font-size: 80px;
+}
+hr{
+	background: transparent;
+}
+.slide-content{
+  position: absolute;
+  float: right;
+  text-align: center;
+  width: 100%;
+}
+.slide-content h1{
+
+	color: white;
+	width: 100%;
+	position:absolute;
+	margin-top: 15%;
+
+}
+.map{
+	 	position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+}
+.map iframe{
+		position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+}
+input{
+	border: none;
+	border-radius: 5px;
+	padding: 2%;
+}
+input[type="submit"]{
+	color: #ffffff;
+	background: #008CBA;
+}
+input[type="submit"]:hover{
+	background: #55B8C4;
+	transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
