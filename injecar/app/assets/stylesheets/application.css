@@ -33,15 +33,26 @@ header{
 	box-shadow: 0 -24px 8px 27px rgba(0,0,0,0.3);
 	background: #ffffff !important;
 }
-.top-bar{
-	background: #fff !important;
-	color: #333;
-}
-.top-bar-section li:not(.has-form) a:not(.button){
+.fixed nav.top-bar{
 	background: #fff;
 	color: #333;
 }
-.top-bar-section li:not(.has-form) a:not(.button):hover{
+.top-bar-section {
+  margin-left: 300px;
+  position: fixed;
+}
+.fixed .top-bar-section > .right {
+    background: #fff;
+	color: #333;
+}
+nav.menu ul {
+ float: right !important;
+}
+.fixed section.top-bar-section li:not(.has-form) a:not(.button){
+	background: #fff;
+	color: #333;
+}
+.fixed section.top-bar-section li:not(.has-form) a:not(.button):hover{
 		background: #fff;
 		color: red;
 }
@@ -66,11 +77,14 @@ footer a:hover{
 ul{
 	list-style:none;
 }
+.text-quem-somos .bgwhite{
+  margin: 0 auto;
+}
 .bgwhite{
 	padding: 4%;
 	background: #ffffff;
 	color: #333;
-	text-align: center;
+    font-size: 20px;
 }
 .bgblue{
 	padding: 4%;
