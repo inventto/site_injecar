@@ -189,3 +189,16 @@ input[type="submit"]:hover{
 .orbit-bullets{
 	display: none !important;
 }
+.message-error, .message-notice {
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+.message-notice {
+  color: #00b050;
+  margin-left: 150px;
+}
+.message-error {
+  color: red;
+}
