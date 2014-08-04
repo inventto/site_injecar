@@ -16,6 +16,11 @@
   </head>
   <body>
     <%= render template: "layouts/header.html.erb" %>
+    <% if flash[:notice]%>
+      <p class="notice"><%=h flash[:notice] %></p>
+    <% else %>
+      <p class="error"><%=h flash[:error] %></p>
+    <% end %>
     <div class="page-content">
       <div class="wrap">
         <%= yield %>

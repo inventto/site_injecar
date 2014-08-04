@@ -15,7 +15,19 @@ Injecar::Application.configure do
 
   # Don't care if the mailer can't send
   if config.respond_to?(:action_mailer)
-    config.action_mailer.raise_delivery_errors = false
+    config.action_mailer.raise_delivery_errors = true
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      address: "smtp.gmail.com",
+      port: 465,
+      domain: "mail.google.com",
+      authentication: "plain",
+      enable_starttls_auto: true,
+      user_name: "invent.to.sistemas@gmail.com",
+      password: "!@#123abc#@!",
+      :enable_starttls_auto => true,
+      :ssl =>  true
+    }
   end
 
   # Print deprecation notices to the Rails logger

@@ -51,6 +51,9 @@ GEM
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
+    dotenv (0.11.1)
+      dotenv-deployment (~> 0.0.2)
+    dotenv-deployment (0.0.2)
     dragonfly (0.9.15)
       multi_json (~> 1.0)
       rack
@@ -181,6 +184,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  dotenv
   jquery-rails
   rails (= 3.2.19)
   refinerycms (~> 2.1.0)
