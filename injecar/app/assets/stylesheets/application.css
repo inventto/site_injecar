@@ -195,8 +195,23 @@ input[type="submit"]:hover{
 .orbit-bullets, .error{
 	display: none !important;
 }
+
 .quemsomos{
 	max-width: 850px;
 	text-align: justify;
 	margin: 0 auto;
+}
+
+.message-error, .message-notice {
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+.message-notice {
+  color: #00b050;
+  margin-left: 150px;
+}
+.message-error {
+  color: red;
 }

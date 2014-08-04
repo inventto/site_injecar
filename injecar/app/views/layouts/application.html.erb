@@ -13,13 +13,19 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="/assets/application.css">
+    <script type="text/javascript" language="javascript" charset="utf-8">
+      $('.message-notice').show('fade', 1000);
+        setTimeout("$('.message-notice').slideUp();", 3000);
+      $('.message-error').show('fade', 1000);
+        setTimeout("$('.message-error').slideUp();", 3000);
+    </script>
   </head>
   <body>
     <%= render template: "layouts/header.html.erb" %>
     <% if flash[:notice]%>
-      <p class="notice"><%=h flash[:notice] %></p>
+      <p class="message-notice"><%=h flash[:notice] %></p>
     <% else %>
-      <p class="error"><%=h flash[:error] %></p>
+      <p class="message-error"><%=h flash[:error] %></p>
     <% end %>
     <div class="page-content">
       <div class="wrap">
