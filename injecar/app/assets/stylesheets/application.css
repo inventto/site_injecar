@@ -27,9 +27,13 @@ footer{
   	z-index: 99999;
 }
 .row{
-	width: 100%;
-	margin: 0 auto;
+	width: 100% !important;
+	margin: 0 auto;	
+	text-align: center !important;
 	max-width: 80em !important;
+}
+.row div{
+	text-align: center;
 }
 
 header{
