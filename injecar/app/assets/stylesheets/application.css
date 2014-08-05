@@ -26,6 +26,11 @@ footer{
 	color: #fff;
   	z-index: 99999;
 }
+.row{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 80em !important;
+}
 
 header{
 	border-top: solid 7px #008CBA;
@@ -74,8 +79,12 @@ footer a:hover{
 .slider{
 	width: 100%;
 }
-.slide-content img{
-	width: 100vh;
+.orbit-container ul li img{
+	width: 100vw !important;
+}
+.orbit-prev, .orbit-next{
+	display: block !important;
+	background: #333 !important;
 }
 ul{
 	list-style:none;
@@ -125,7 +134,8 @@ ul{
 }
 .textHomeSmall span{
 	max-width: 200px;
-	font-size: 15px;
+	font-size: 18px;
+	padding: 5%!important;
 	text-align: justify;
 }
 .slider{
@@ -148,7 +158,7 @@ hr{
   width: 100%;
 }
 .slide-content h1{
-
+	font-size: 2em;
 	color: white;
 	width: 100%;
 	position:absolute;
@@ -200,6 +210,7 @@ input[type="submit"]:hover{
 }
 
 .quemsomos{
+	font-size: 25px;
 	max-width: 850px;
 	text-align: justify;
 	margin: 0 auto;
