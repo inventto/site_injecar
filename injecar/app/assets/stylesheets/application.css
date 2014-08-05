@@ -74,6 +74,9 @@ footer a:hover{
 .slider{
 	width: 100%;
 }
+.slide-content img{
+	width: 100vh;
+}
 ul{
 	list-style:none;
 }
