@@ -219,6 +219,9 @@ input[type="submit"]:hover{
 	text-align: justify;
 	margin: 0 auto;
 }
+.quemsomos ul>li{
+	font-size: 25px !important;
+}
 
 .message-error, .message-notice {
   text-align: center;
