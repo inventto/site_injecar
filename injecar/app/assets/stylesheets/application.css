@@ -24,11 +24,11 @@ footer{
 	padding: 15px;
 	background: #FF4A29;
 	color: #fff;
-  	z-index: 99999;
+  	z-index: 98;
 }
 .row{
 	width: 100% !important;
-	margin: 0 auto;	
+	margin: 0 auto;
 	text-align: center !important;
 	max-width: 80em !important;
 }
@@ -53,6 +53,9 @@ header{
 .fixed .top-bar-section > .right {
     background: #fff;
 	color: #333;
+}
+header.fixed {
+    z-index: 1000 !important;
 }
 nav.menu ul {
  float: right !important;

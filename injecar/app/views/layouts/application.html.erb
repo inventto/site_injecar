@@ -13,12 +13,6 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="/assets/application.css">
-    <script type="text/javascript" language="javascript" charset="utf-8">
-      $('.message-notice').show('fade', 1000);
-        setTimeout("$('.message-notice').slideUp();", 3000);
-      $('.message-error').show('fade', 1000);
-        setTimeout("$('.message-error').slideUp();", 3000);
-    </script>
   </head>
   <body>
     <%= render template: "layouts/header.html.erb" %>
@@ -40,5 +34,32 @@
     <script src="/assets/foundation/foundation.orbit.js"></script>
     <script src="/assets/foundation.min.js"></script>
     <script>$(document).foundation();</script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $(function() {
+                    // Stick the #nav to the top of the window
+                    var nav = $('');
+                    var img = $('');
+                    var navHomeY = 55;
+                    var imgHomeY = 0;
+                    var $w = $(window);
+            ajustarMenu = function() {
+                   var scrollTop =  $w.scrollTop();
+            fontRatio = (95 - scrollTop) / 60;
+            if (fontRatio < 1)
+            fontRatio = 1;
+            if (scrollTop > navHomeY) {
+            scrollTop = navHomeY;
+                   }
+                   nav.css({
+                         top: "-"+scrollTop+"px"
+                     });
+            img.css({fontSize: (24 * fontRatio) + "px", width: (100 * fontRatio) +"px", marginTop: (scrollTop/1.2)+"px"});
+            };
+                    $w.scroll(ajustarMenu);
+            ajustarMenu();
+          });
+      });
+</script>
   </body>
 </html>
