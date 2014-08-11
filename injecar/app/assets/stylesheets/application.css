@@ -166,11 +166,13 @@ hr{
 }
 .slide-content h1{
 	font-size: 2em;
+	
 	color: white;
 	width: 100%;
 	position:absolute;
 	margin-top: 15%;
-
+	text-shadow: 0px 0px 12px rgba(0, 0, 0, 1); 
+	-moz-text-shadow: 0px 0px 12px rgba(0, 0, 0, 1); 
 }
 .map{
 	 	position: relative;
