@@ -37,24 +37,30 @@
     <script type="text/javascript">
       $(document).ready(function(){
           $(function() {
-                    // Stick the #nav to the top of the window
-                    var nav = $('');
-                    var img = $('');
-                    var navHomeY = 55;
+                    var nav = $('#head');
+                    var img = $('.title-area, .title-area img');
+                    var navHomeY = 20;
                     var imgHomeY = 0;
                     var $w = $(window);
             ajustarMenu = function() {
                    var scrollTop =  $w.scrollTop();
-            fontRatio = (95 - scrollTop) / 60;
+            fontRatio = (110 - scrollTop) / 55;
             if (fontRatio < 1)
             fontRatio = 1;
             if (scrollTop > navHomeY) {
+            console.log("Scroll Top: "+scrollTop);
             scrollTop = navHomeY;
+            console.log("Scroll Top com nav Home: "+scrollTop);
                    }
                    nav.css({
-                         top: "-"+scrollTop+"px"
+                         top: "-"+scrollTop+"px",
                      });
-            img.css({fontSize: (24 * fontRatio) + "px", width: (100 * fontRatio) +"px", marginTop: (scrollTop/1.2)+"px"});
+            if (nav <= 58){
+                   nav.css({
+                         height: "60px",
+                   });
+            }
+            img.css({width: ((100 * fontRatio) +"px"), top: ((scrollTop / 1.2)+"px")});
             };
                     $w.scroll(ajustarMenu);
             ajustarMenu();

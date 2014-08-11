@@ -54,8 +54,7 @@ header{
     background: #fff;
 	color: #333;
 }
-header.fixed {
-    z-index: 1000 !important;
+#head {
 }
 nav.menu ul {
  float: right !important;
@@ -166,13 +165,13 @@ hr{
 }
 .slide-content h1{
 	font-size: 2em;
-	
+
 	color: white;
 	width: 100%;
 	position:absolute;
 	margin-top: 15%;
-	text-shadow: 0px 0px 12px rgba(0, 0, 0, 1); 
-	-moz-text-shadow: 0px 0px 12px rgba(0, 0, 0, 1); 
+	text-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+	-moz-text-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
 }
 .map{
 	 	position: relative;
@@ -240,4 +239,7 @@ input[type="submit"]:hover{
 }
 .message-error {
   color: red;
+}
+.logo_position {
+  width: 190px !important;
 }
