@@ -50,7 +50,19 @@ Injecar::Application.configure do
 
   # Disable delivery errors, bad email addresses will be ignored
   if config.respond_to?(:action_mailer)
-    # config.action_mailer.raise_delivery_errors = false
+    config.action_mailer.raise_delivery_errors = true
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      address: "smtp.gmail.com",
+      port: 465,
+      domain: "mail.google.com",
+      authentication: "plain",
+      enable_starttls_auto: true,
+      user_name: "miguelcaregnatto@gmail.com",
+      password: "mlc121160",
+      :enable_starttls_auto => true,
+      :ssl =>  true
+    }  }
   end
 
   # Enable threaded mode
