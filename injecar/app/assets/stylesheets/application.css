@@ -80,7 +80,7 @@ footer a{
 	color: #ffffff;
 }
 footer a:hover{
-	color:#29FFA6;
+	color: #0098DF;
 }
 .slider{
 	width: 100%;
@@ -242,4 +242,34 @@ input[type="submit"]:hover{
 }
 .logo_position {
   width: 190px !important;
+}
+#head {
+  padding: 0px;
+}
+
+.top-bar-section #menu > ul > li:nth-child(1) {
+  background: #55B8C4 !important;
+}
+
+.top-bar-section #menu > ul > li:nth-child(2) {
+  background: #EB6233 !important;
+}
+.top-bar-section #menu > ul > li:nth-child(3) {
+  background: #0F6A8F !important;
+}
+.top-bar-section #menu > ul > li:nth-child(4) {
+  background: #8CCCCA !important;
+}
+.top-bar-section #menu > ul > li:nth-child(5) {
+  background: #0391DB !important;
+}
+
+.top-bar-section #menu > ul > li > a {
+  background: transparent !important;
+  line-height: 5em;
+  color: #fff;
+}
+.top-bar-section #menu > ul > li > a:hover {
+  background: #fff !important;
+  color: #0098DF;
 }
