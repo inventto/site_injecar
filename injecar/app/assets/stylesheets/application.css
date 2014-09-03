@@ -286,6 +286,7 @@ input[type="submit"]:hover{
 #banners {
   width: 50%;
   display: block;
+  float: left;
 }
 .banner-localizacao {
   display: inline;
@@ -313,4 +314,5 @@ input[type="submit"]:hover{
 }
 .slider-cards{
 	width: 50%;
+    float: right;
 }
