@@ -23,8 +23,8 @@ Injecar::Application.configure do
       domain: "mail.google.com",
       authentication: "plain",
       enable_starttls_auto: true,
-      user_name: "invent.to.sistemas@gmail.com",
-      password: "!@#123abc#@!",
+      user_name: "miguelcaregnatto@gmail.com",
+      password: "mlc121160",
       :enable_starttls_auto => true,
       :ssl =>  true
     }

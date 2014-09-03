@@ -283,6 +283,19 @@ input[type="submit"]:hover{
   background: #fff !important;
   color: #0098DF;
 }
+#banners {
+  width: 50%;
+  display: block;
+}
+.banner-localizacao {
+  display: inline;
+  float: left;
+  margin: 10px 0 0 5px;
+}
+.banner-funcionamento {
+  display: inline;
+  margin: 10px;
+  float: right;
 #menu{
 	width:75%;
 }
