@@ -311,3 +311,6 @@ input[type="submit"]:hover{
 #menu > ul > li > a{
 	font-weight:bold;
 }
+.slider-cards{
+	width: 50%;
+}
