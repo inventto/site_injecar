@@ -17,6 +17,9 @@ html, div, nav, h1,h2,h3,h4, h5, a{
 	font-family: 'Open Sans', sans-serif !important;
 
 }
+section{
+	text-align:center;
+}
 body{
 	list-style:none;
 }
@@ -27,7 +30,7 @@ footer{
   	z-index: 98;
 }
 .row{
-	width: 100% !important;
+
 	margin: 0 auto;
 	text-align: center !important;
 	max-width: 80em !important;
@@ -47,7 +50,7 @@ header{
 	color: #333;
 }
 .top-bar-section {
-  margin-left: 300px;
+
   position: fixed;
 }
 .fixed .top-bar-section > .right {
@@ -83,7 +86,10 @@ footer a:hover{
 	color: #0098DF;
 }
 .slider{
-	width: 100%;
+	top:0;
+
+	width: 70%;
+
 }
 .orbit-container ul li img{
 	width: 100vw !important;
@@ -139,17 +145,20 @@ ul{
 	display: none;
 }
 .textHomeSmall span{
-	max-width: 200px;
+	width:30%;
 	font-size: 18px;
-	padding: 5%!important;
+	padding: 2%!important;
 	text-align: justify;
 }
 .slider{
   padding: 0 !important;
 }
 .large{
-	font-size: 80px;
+	font-size: 50px;
 	text-align: center;
+}
+.large img{
+	width:30%;
 }
 .bgspacing{
 	top: 10%;
@@ -164,8 +173,7 @@ hr{
   width: 100%;
 }
 .slide-content h1{
-	font-size: 2em;
-
+	font-size: 1.5em;
 	color: white;
 	width: 100%;
 	position:absolute;
@@ -211,7 +219,9 @@ input[type="submit"]:hover{
 }
 .columns img{
 	text-align: center;
-	max-width: 250px;
+	width:45%;
+	max-width: 50%;
+	height:auto;
 }
 .orbit-bullets, .error{
 	display: none !important;
@@ -248,20 +258,20 @@ input[type="submit"]:hover{
 }
 
 .top-bar-section #menu > ul > li:nth-child(1) {
-  background: #55B8C4 !important;
+	background: #0F6A8F !important;
 }
-
 .top-bar-section #menu > ul > li:nth-child(2) {
-  background: #EB6233 !important;
+
+	background: #0391DB !important;
 }
 .top-bar-section #menu > ul > li:nth-child(3) {
-  background: #0F6A8F !important;
+  background: #55B8C4 !important;
 }
 .top-bar-section #menu > ul > li:nth-child(4) {
   background: #8CCCCA !important;
 }
 .top-bar-section #menu > ul > li:nth-child(5) {
-  background: #0391DB !important;
+	background: #EB6233 !important;
 }
 
 .top-bar-section #menu > ul > li > a {
@@ -286,4 +296,17 @@ input[type="submit"]:hover{
   display: inline;
   margin: 10px;
   float: right;
+#menu{
+	width:75%;
+}
+#menu ul{
+	white-space:nowrap;
+}
+#menu > ul > li{
+	width:20%;
+	right:0 !important;
+	white-space:nowrap;
+}
+#menu > ul > li > a{
+	font-weight:bold;
 }
