@@ -318,4 +318,6 @@ input[type="submit"]:hover{
   width: 30%;
   padding: 2%;
 }
-
+.f-topbar-fixed {
+  padding-top: 125px !important;
+}
