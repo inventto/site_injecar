@@ -38,44 +38,56 @@
     <script>$(document).foundation();</script>
     <script type="text/javascript">
       $(document).ready(function(){
-          $(function() {
-                    var nav = $('#head');
-                    var img = $('.title-area, .title-area img');
-                    var navHomeY = 20;
-                    var imgHomeY = 0;
-                    var $w = $(window);
+         $(function() {
+            var header = $('header');
+            var menu = $('.top-bar-section #menu > ul > li > a');
+            var img = $('.logo_position');
+            var alturaPadrao = 125;//nav.height();
+            var alturaMinima = 45;
+            var scrollAction = alturaPadrao - alturaMinima;
+            var navHomeY = 20;
+            var imgHomeY = 0;
+            var $w = $(window);
             ajustarMenu = function() {
-                   var scrollTop =  $w.scrollTop();
-            fontRatio = (120 - scrollTop) / 60;
-            if (fontRatio < 1)
-            fontRatio = 1;
-            if (scrollTop > navHomeY) {
-            console.log("Scroll Top: "+scrollTop);
-            scrollTop = navHomeY;
-            console.log("Scroll Top com nav Home: "+scrollTop);
-                   }
-                   nav.css({
-                         top: "-"+scrollTop+"px",
-                     });
-            if (nav <= 58){
-                   nav.css({
-                         height: "60px",
-                   });
+            var scrollTop =  $w.scrollTop();
+            console.log(scrollTop + " < " + scrollAction);
+            if (scrollTop <= scrollAction) {
+              var alturaLinha = alturaPadrao - scrollTop;
+              menu.css({
+                lineHeight: alturaLinha+"px"
+              });
+              img.css({
+                height: (alturaLinha - 5) +"px"
+              });
+              header.css({
+                borderTop: (7 * (alturaLinha / alturaPadrao)) +"px solid #008cba"
+              });
+            } else {
+              menu.css({
+                lineHeight: alturaMinima+"px",
+                top: "0px"
+              });
+              img.css({
+                height: (alturaMinima - 5) +"px",
+                top: "0px"
+              });
+                header.css({
+                borderTop: "1px solid #008cba"
+              });
             }
-            img.css({width: ((100 * fontRatio) +"px"), top: ((scrollTop / 1.2)+"px")});
-            };
-                    $w.scroll(ajustarMenu);
-            ajustarMenu();
-          });
-      });
+         };
+         $w.scroll(ajustarMenu);
+         ajustarMenu();
+       });
+    });
 </script>
 <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   </body>
 </html>
