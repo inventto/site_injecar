@@ -322,3 +322,22 @@ input[type="submit"]:hover{
 .f-topbar-fixed {
   padding-top: 125px !important;
 }
+#menu li a {
+	padding: 0 !important;
+}
+@media only screen and (max-width: 1023px) {
+	#menu a {
+		font-size: 11px;
+	}
+	#menu{
+		width:60%;
+	}
+}
+@media only screen and (max-width: 780px) {
+	#menu a {
+		font-size: 10px;
+	}
+	#menu{
+		width:70%;
+	}
+}

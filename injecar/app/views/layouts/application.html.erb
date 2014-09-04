@@ -49,6 +49,13 @@
             var imgHomeY = 0;
             var $w = $(window);
             ajustarMenu = function() {
+            if ($w.width() < 780) {
+              alturaPadrao = 70;
+            } else if ($w.width() < 1024) {
+              alturaPadrao = 100;
+            } else {
+              alturaPadrao = 125;
+            }
             var scrollTop =  $w.scrollTop();
             console.log(scrollTop + " < " + scrollAction);
             if (scrollTop <= scrollAction) {
@@ -57,7 +64,8 @@
                 lineHeight: alturaLinha+"px"
               });
               img.css({
-                height: (alturaLinha - 5) +"px"
+                height: (alturaLinha * 0.9) +"px",
+                margin: "0 2%"
               });
               header.css({
                 borderTop: (7 * (alturaLinha / alturaPadrao)) +"px solid #008cba"
@@ -68,7 +76,8 @@
                 top: "0px"
               });
               img.css({
-                height: (alturaMinima - 5) +"px",
+                height: (alturaMinima * 0.9) +"px",
+                margin: "0 2%",
                 top: "0px"
               });
                 header.css({
