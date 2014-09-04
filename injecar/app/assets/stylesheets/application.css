@@ -87,7 +87,7 @@ footer a:hover{
 }
 .slider{
 	top:0;
-
+    float: left;
 	width: 70%;
 
 }
@@ -219,8 +219,6 @@ input[type="submit"]:hover{
 }
 .columns img{
 	text-align: center;
-	width:45%;
-	max-width: 50%;
 	height:auto;
 }
 .orbit-bullets, .error{
@@ -249,9 +247,6 @@ input[type="submit"]:hover{
 }
 .message-error {
   color: red;
-}
-.logo_position {
-  width: 190px !important;
 }
 #head {
   padding: 0px;
@@ -288,15 +283,14 @@ input[type="submit"]:hover{
   display: block;
   float: left;
 }
-.banner-localizacao {
-  display: inline;
-  float: left;
-  margin: 10px 0 0 5px;
+#banners > div {
+  margin-bottom: 5%;
 }
-.banner-funcionamento {
-  display: inline;
-  margin: 10px;
-  float: right;
+#banners > div img {
+ opacity: 1.0;
+}
+#banners > div img:hover {
+ opacity: 0.6;
 }
 #menu{
 	width:75%;
@@ -313,6 +307,15 @@ input[type="submit"]:hover{
 	font-weight:bold;
 }
 .slider-cards{
-	width: 50%;
     float: right;
+    margin-right: 5%;
 }
+.home_texto_valores {
+  text-align: justify;
+}
+.home_valores {
+  float: right;
+  width: 30%;
+  padding: 2%;
+}
+
