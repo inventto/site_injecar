@@ -73,6 +73,7 @@ nav.menu ul {
 .top-bar.expanded .title-area {
 	background: #fff;
 }
+.title-area img
 a{
 	color: #59ABE3;
 }
@@ -293,7 +294,7 @@ input[type="submit"]:hover{
  opacity: 0.6;
 }
 #menu{
-	width:75%;
+	width:68%;
 }
 #menu ul{
 	white-space:nowrap;
