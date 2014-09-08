@@ -87,8 +87,8 @@ footer a:hover{
 }
 .slider{
 	top:0;
-    float: left;
-	width: 70%;
+	width: 95%;
+    margin: 0 auto;
 
 }
 .orbit-container ul li img{
@@ -278,13 +278,8 @@ input[type="submit"]:hover{
   background: #fff !important;
   color: #0098DF;
 }
-#banners {
-  width: 50%;
-  display: block;
-  float: left;
-}
 #banners > div {
-  margin-bottom: 5%;
+  margin-top: 2%;
 }
 #banners > div img {
  opacity: 1.0;
@@ -308,14 +303,14 @@ input[type="submit"]:hover{
 }
 .slider-cards{
     float: right;
-    margin-right: 5%;
+    margin-right: 10%;
 }
 .home_texto_valores {
   text-align: justify;
 }
 .home_valores {
-  float: right;
-  width: 30%;
+  float: left;
+  width: 50%;
   padding: 2%;
 }
 .f-topbar-fixed {
