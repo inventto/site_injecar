@@ -168,6 +168,7 @@ hr{
 	border: 1px solid #fff !important;
 }
 .slide-content{
+  margin-top: -5%;
   position: absolute;
   float: right;
   text-align: center;
@@ -177,10 +178,11 @@ hr{
 	font-size: 1.5em;
 	color: white;
 	width: 100%;
+    padding: 10px;
 	position:absolute;
-	margin-top: 15%;
 	text-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
 	-moz-text-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+    background: rgba(0,0,0,0.7);
 }
 .map{
 	 	position: relative;
